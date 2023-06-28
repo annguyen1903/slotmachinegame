@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#game-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#reels-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reel {
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.input-group input[type="number"] {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 70px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: #337ab7;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button-group button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#info-container {
+  text-align: center;
+}
+
+#balance-info,
+#winnings-info {
+  margin-bottom: 10px;
+}
+
+#balance-info::before,
+#winnings-info::before {
+  content: attr(data-label);
+  font-weight: bold;
+}
+
+#balance-info span,
+#winnings-info span {
+  font-weight: normal;
+}
